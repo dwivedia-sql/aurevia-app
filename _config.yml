@@ -1,0 +1,33 @@
+# Jekyll configuration for Aurevia GitHub Pages
+# This file tells Jekyll to build the site without any special processing
+
+theme: jekyll-theme-primer
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null
+
+# Exclude files from processing
+exclude:
+  - .git
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
